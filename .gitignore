@@ -1,0 +1,6 @@
+node_modules/
+bower_components/
+.DS_Store
+package-lock.json
+.env
+client/dist/compiled/bundle.js
