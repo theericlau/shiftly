@@ -7,12 +7,12 @@
     "node": ">=6.4.0"
   },
   "scripts": {
+    "postinstall": "webpack -p",
     "react-dev": "webpack -d --watch",
     "server-dev": "nodemon ./server/index.js",
-    "test": "npm run test:mocha && npm run test:jest"
+    "test": "npm run test:mocha && npm run test:jest",
+    "db:setup": "node database/example-data/seedDatabase.js"
   },
-  "author": "Eric",
-  "license": "ISC",
   "dependencies": {
     "axios": "^0.17.1",
     "babel-cli": "^6.7.5",
@@ -26,16 +26,25 @@
     "bluebird": "^3.5.1",
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
+    "classnames": "^2.2.5",
+    "cookie-parser": "^1.4.3",
+    "dotenv": "^4.0.0",
     "eslint": "^4.11.0",
     "express": "^4.16.2",
+    "js-combinatorics": "^0.5.2",
     "material-ui": "^0.19.4",
     "material-ui-pickers": "^1.0.0-beta.4",
     "mocha": "^4.0.1",
+    "moment": "^2.19.2",
+    "pg": "^7.4.0",
+    "prop-types": "^15.6.0",
     "react": "^16.1.1",
     "react-dom": "^16.1.1",
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-promise": "^0.5.3",
+    "sequelize": "^4.22.6",
+    "underscore": "^1.8.3",
     "webpack": "^3.8.1"
   },
   "devDependencies": {
@@ -47,8 +56,10 @@
     "eslint-plugin-react": "^7.5.1",
     "jest": "^21.2.1",
     "mocha": "^4.0.1",
+    "node-mocks-http": "^1.6.6",
     "nodemon": "^1.12.1",
-    "path": "^0.12.7"
+    "path": "^0.12.7",
+    "supertest": "^3.0.0"
   },
   "babel": {
     "presets": [

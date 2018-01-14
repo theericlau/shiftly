@@ -1,0 +1,379 @@
+@import url('https://fonts.googleapis.com/css?family=Pacifico');
+
+body {
+  margin: 0;
+  font-family: "Helvetica","Arial",sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  letter-spacing: .04em;
+  line-height: 1;
+  color: rgba(0,0,0,.75);
+  background-color: #fafafa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  font-weight: 100;
+}
+
+.app-container {
+  width: 100%;
+}
+.container {
+  width: 100%;
+}
+
+.clear-fix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+.ratio-col {
+  display: block;
+  float: left;
+}
+
+.ratio-col-1 {
+  width: 100%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-2 {
+  width: 50%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-3 {
+  width: 33.3333333%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-3-2 {
+  width: 66.66666%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-4 {
+  width: 25%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-4-3 {
+  width: 75%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-8 {
+  width: 12.5%;
+  display: block;
+  float: left;
+}
+
+.ratio-col-16 {
+  width: 6.25%;
+  display: block;
+  float: left;
+}
+
+.list-item {
+  border-collapse: collapse;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  min-height: 48px;
+  line-height: 48px;
+  margin-left: -1px;
+  margin-top: -1px;
+  background-color: white;
+}
+
+.editor-component {
+  padding: 16px;
+}
+
+.editor-tab {
+  padding: 16px;
+  text-align: center;
+}
+
+.employee-edit {
+  float: right;
+}
+
+.employee-edit-button {
+  vertical-align: middle;
+  color: rgb(234, 183, 105);
+}
+
+.employee-edit-profile {
+  vertical-align: middle;
+  padding-right: 15px;
+  font-size: 40px;
+  color: #757575;
+}
+
+.editor-header {
+  background-color: rgb(0, 150, 136);
+  color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  position: relative;
+  z-index: 10;
+}
+
+.employee-availability {
+  min-height: 100px;
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.select-days-table {
+  width: 100%;
+  padding: 35px 0;
+}
+
+.select-days-table th {
+  text-align: center;
+  font-weight: 100;
+}
+
+.select-days-table td {
+  text-align: center;
+}
+
+.day-checkbox {
+  color: rgb(234, 183, 105);
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.employee-editor-save-btn {
+  float: right;
+}
+
+.schedule-input-box {
+  width: 25px;
+}
+
+.schedule-generator {
+  background-image: url('./assets/trees.jpg');
+  background-color: rgb(0, 150, 136);
+  color: white;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  position: relative;
+  padding: 20px;
+}
+
+.schedule-generator-date {
+  font-size: 24px;
+}
+
+.schedule-generator-button {
+  float: right;
+  padding: 20px 0 0 0;
+}
+
+.btn-primary {
+  line-height: 40px;
+  height: 40px;
+  background: none;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 2px;
+  border: solid 1px white;
+  padding: 0 50px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+}
+
+.btn-main {
+  line-height: 40px;
+  height: 40px;
+  background-color: rgb(0, 149, 135);
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  border-radius: 2px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+
+}
+
+.schedule-date-header {
+  padding: 10px;
+  text-align: center;
+}
+
+.schedule-block {
+  padding: 10px;
+  height: 30px;
+}
+
+.schedule-shift-on {
+  background-color: rgb(234, 183, 105);
+  border-radius: 2px;
+}
+
+.schedule-shift-off {
+  background-color: rgb(255, 255, 255);
+}
+
+.schedule-name {
+  text-align: right;
+  vertical-align: middle;
+  padding-right: 10px;
+}
+
+.schedule-hours {
+  font-size: 12px;
+  color: rgba(0,0,0,.5);
+}
+
+.schedule-row {
+  padding: 5px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.schedule-actual {
+  padding: 40px 16px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.component-block {
+  margin: 5px;
+}
+
+.no-employee-schedule {
+  text-align: center;
+  padding: 100px 0 0 0;
+}
+
+.navbar {
+  background-color: white;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+
+.nav-right {
+  float: right;
+}
+
+.nav-left {
+  float: left;
+}
+
+.nav-item {
+  display: inline-block;
+  padding: 10px;
+}
+
+.nav-logo {
+  font-family: "Pacifico", "Helvetica","Arial",sans-serif;
+  font-size: 20px;
+  color: #eab768;
+  padding: 5px 10px 0 10px;
+}
+
+.shiftly-icon {
+  font-size: 30px;
+  vertical-align: middle;
+  position: relative;
+  top: -3px;
+}
+
+.dashboard-container {
+  margin: 10px;
+  min-width: 1400px;
+}
+
+.credentials {
+  min-height: 100px;
+  padding: 25px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-color: white;
+  margin: auto;
+  width: 400px;
+  margin-top: 50px;
+}
+
+.btn-credentials {
+  float: right;
+  padding-top:20px;
+}
+
+.credentials-label {
+  display: block;
+  padding: 10px 0;
+}
+
+.credentials-input {
+  height: 30px;
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.red-flash-message {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgb(207, 98, 84);
+  background-color: rgb(252, 192, 182);
+  color: rgb(207, 98, 84);
+}
+
+.green-flash-message {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid rgb(67, 158, 130);
+  background-color: rgb(185, 236, 218);
+  color: rgb(67, 158, 130);
+}
+
+.date-dropdown {
+  border-radius: 2px;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 100;
+  font-family: Helvetica;
+  width: 100%;
+}
+
+.schedule-prompt {
+  padding: 100px 0 20px 0;
+  text-align: center;
+}
+
+.shift-prompt {
+  padding: 20px 0 0 0;
+}
+
+.selected-tab {
+  border-bottom: 5px solid rgb(234, 183, 105);
+  background-color: #0ca496;
+}
+
+@media (max-width: 900px) {
+  .dashboard-container {
+    min-width: 100%;
+    margin: 0;
+  }
+
+  .major-component {
+    width: 100%;
+    margin: 0;
+  }
+}

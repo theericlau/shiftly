@@ -1,0 +1,17 @@
+language: node_js
+
+#lists the versions of node that needs to be tested. Can specify one or more of the latest releases
+node_js:
+  #latest stable Node.js release
+  - "node"
+
+services:
+  - postgresql
+
+before_script:
+  - psql -c 'create database shiftly;' -U postgres
+
+#npm install will still run on every build and will update/install any new packages added to your package.json file
+cache:
+  directories:
+    - "node_modules"
