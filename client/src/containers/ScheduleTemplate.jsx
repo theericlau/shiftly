@@ -178,4 +178,13 @@ function mapDispatchToProps(dispatch) {
   }, dispatch);
 }
 
+ScheduleTemplate.propTypes = {
+  updateNeededEmployees: PropTypes.func.isRequired,
+  createScheduleDate: PropTypes.func,
+  createScheduleTemplate: PropTypes.func.isRequired,
+  selectedWeek: PropTypes.string.isRequired,
+  schedule: PropTypes.object,
+  monDate: PropTypes.string,
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(ScheduleTemplate);

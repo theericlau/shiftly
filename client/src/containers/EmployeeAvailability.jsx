@@ -116,5 +116,8 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ updateEmployeeAvailability }, dispatch);
 }
 
-
+EmployeeAvailability.propTypes = {
+  updateEmployeeAvailability: PropTypes.func.isRequired,
+  newAvailabilities: PropTypes.objectOf(PropTypes.number),
+};
 export default connect(null, mapDispatchToProps)(EmployeeAvailability);

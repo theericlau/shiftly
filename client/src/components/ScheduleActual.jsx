@@ -41,4 +41,8 @@ const ScheduleActual = (props) => {
   );
 }
 
+ScheduleActual.propTypes = {
+  weekHasAtLeastOneNeededEmployee: PropTypes.bool,
+  selectedWeekActualSchedule: PropTypes.arrayOf(PropTypes.object).isRequired,
+};
 export default ScheduleActual;

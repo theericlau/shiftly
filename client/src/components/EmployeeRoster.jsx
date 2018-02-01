@@ -26,5 +26,8 @@ const EmployeeRoster = (props) => {
   );
 };
 
+EmployeeRoster.propTypes = {
+  selectEmployee: PropTypes.func.isRequired,
+};
 
 export default EmployeeRoster;

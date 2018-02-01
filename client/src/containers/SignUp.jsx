@@ -36,4 +36,7 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ signUp }, dispatch);
 }
 
+SignUp.propTypes = {
+  signUp: PropTypes.func.isRequired,
+};
 export default connect(null, mapDispatchToProps)(SignUp);

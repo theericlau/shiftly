@@ -95,4 +95,14 @@ function mapDispatchToProps(dispatch) {
   }, dispatch);
 }
 
+App.propTypes = {
+  checkedIfLoggedIn: PropTypes.func.isRequired,
+  changeView: PropTypes.func.isRequired,
+  logout: PropTypes.func.isRequired,
+  view: PropTypes.string.isRequired,
+  flashMessage: PropTypes.objectOf(PropTypes.string),
+  users: PropTypes.arrayOf(PropTypes.object),
+  selectedWeek: PropTypes.string.isRequired,
+};
+
 export default connect(mapStateToProps, mapDispatchToProps)(App);

@@ -154,5 +154,11 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectWeek }, dispatch);
 }
 
+ScheduleEditor.propTypes = {
+  selectWeek: PropTypes.func.isRequired, //from actions
+  dayPartsMap: PropTypes.object.isRequired,
+  scheduleNeeds: PropTypes.object.isRequired,
+  selectedWeek: PropTypes.string.isRequired, //state
+};
 
 export default connect(mapStateToProps, mapDispatchToProps)(ScheduleEditor);

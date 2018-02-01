@@ -134,5 +134,12 @@ function mapStateToProps(state) {
   }
 }
 
+Dashboard.propTypes = {
+  selectedWeekScheduleId: PropTypes.number,
+  weekHasActualSchedule: PropTypes.bool.isRequired,
+  weekHasAtLeastOneNeededEmployee: PropTypes.bool.isRequired,
+  selectedWeekActualSchedule: PropTypes.arrayOf(PropTypes.object).isRequired,
+  selectedWeek: PropTypes.string.isRequired,
+};
 
 export default connect(mapStateToProps)(Dashboard);

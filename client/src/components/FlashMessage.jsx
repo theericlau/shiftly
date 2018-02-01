@@ -7,4 +7,9 @@ const FlashMessage = (props) => (
   </div>
 );
 
+FlashMessage.propTypes = {
+  message: PropTypes.string,
+  type: PropTypes.string,
+};
+
 export default FlashMessage;

@@ -51,5 +51,12 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ generateSchedule: generateSchedule }, dispatch)
 }
 
+ScheduleGenerator.propTypes = {
+  generateSchedule: PropTypes.func.isRequired,
+
+  weekHasActualSchedule: PropTypes.bool.isRequired,
+  selectedWeek: PropTypes.string.isRequired,
+  weekHasAtLeastOneNeededEmployee: PropTypes.bool.isRequired,
+};
 
 export default connect(null, mapDispatchToProps)(ScheduleGenerator);

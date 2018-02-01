@@ -26,4 +26,8 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ selectEmployee }, dispatch);
 }
 
+EmployeeRosterItem.propTypes = {
+  selectEmployee: PropTypes.func.isRequired,
+};
+
 export default connect(null, mapDispatchToProps)(EmployeeRosterItem);

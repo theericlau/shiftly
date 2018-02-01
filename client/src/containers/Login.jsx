@@ -40,5 +40,8 @@ function mapDispatchToProps(dispatch) {
   return bindActionCreators({ login }, dispatch);
 }
 
+Login.propTypes = {
+  login: PropTypes.func.isRequired,
+};
 
 export default connect(null, mapDispatchToProps)(Login);
